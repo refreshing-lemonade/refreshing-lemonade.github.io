@@ -38,7 +38,7 @@ header {
 }
 
 body {
-    background: url("../site/img/NEWBG.png") repeat;
+    background: url("/img/NEWBG.png") repeat;
 }
 
 p {
