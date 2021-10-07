@@ -1,0 +1,101 @@
+
+.styleforbid {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: not-allowed;
+    text-decoration:line-through;
+}
+
+.headerstyle {
+    text-decoration:none;
+    color: #000000;
+}
+.headerstyle:hover {
+    text-shadow: 0px 0px 10px #b6ff00;
+}
+
+header {
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    overflow: auto;
+}
+
+body {
+    background: url("https://refreshinglemona.de/img/NEWBG.png") repeat;
+    margin: 12px;
+}
+
+h1 {
+    border: solid;
+    border-color: black;
+    background-image: linear-gradient( 225deg, steelblue, lightsteelblue);
+    margin-left: 25%;
+    margin-right: 25%;
+    text-shadow: 0px 0px 10px black;
+}
+
+p {
+    color: silver;
+    font-size: 18px;
+    font-family: Arial;
+    margin: 5%;
+    padding: 10px;
+    background: #3f3f3f;
+    border: outset;
+    border-width: 5px;
+}
+
+#headerbox {
+    color: #000000;
+    font-family: Consolas;
+    font-size: 24px;
+    text-align: center;
+    padding:10px;
+    padding-top:17px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #EFEFEF;
+}
+
+#bigyellow {
+    color: rgb(255, 242, 0);
+    margin-top: 80px;
+    text-align: center;
+    font-family: Consolas;
+}
+
+#linktype {
+    color: rgb(50, 250, 233);
+    font-family: Arial;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#sidebar {
+    color: #ff006e;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 16px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #EFEFEF;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    overflow: auto;
+}
