@@ -5,7 +5,7 @@ document.write("<div style='display:flex; float:right;'>");
     document.write("<div id='headerbox'>");
         document.write("<a class='headerstyle' href='https://refreshinglemona.de'>Home</a> | ");
         document.write("<a class='styleforbid' title='Coming Soon'>Projects</a> | ");
-        document.write("<a class='styleforbid' href='https://refreshinglemona.de/rut'>/a> | ");
+        document.write("<a class='headerstyle' href='https://refreshinglemona.de/rut'>RUT</a> | ");
         document.write("<a class='styleforbid' title='Coming Soon'>Extra</a> | ");
         document.write("<a class='headerstyle' href='https://refreshinglemona.de/about'>About</a>");
     document.write("</div>");
