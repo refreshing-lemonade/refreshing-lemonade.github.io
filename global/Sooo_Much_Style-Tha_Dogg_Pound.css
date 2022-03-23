@@ -14,8 +14,9 @@
     text-decoration:none;
     color: #000000;
 }
+
 .headerstyle:hover {
-    text-shadow: 0px 0px 10px #b6ff00;
+    text-shadow: 0px 0px 10px #818181;
 }
 
 .listmargin {
@@ -24,16 +25,33 @@
 }
 
 header {
-    padding-top: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 8px;
-    overflow: auto;
+    padding: 8px;
+    overflow: hidden;
+}
+
+footer {
+    border-width: 20px;
+    border-top-style: outset;
+    border-top-color: initial;
+    background: black;
+    color: white;
+    padding: 3px;
+    margin-bottom: 3px;
+    font-family: monospace;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-bottom: -12px;
+    cursor: default;
+    overflow: scroll;
+    overflow-x: hidden;
+    text-overflow:ellipsis;
+    height:40vh;
 }
 
 body {
-    background: url("https://refreshinglemona.de/global/NEWBG.png") repeat;
+    background-color: dimgrey;
     margin: 12px;
+    margin-bottom: 0px;
 }
 
 h1 {
@@ -56,6 +74,11 @@ p {
     border-width: 5px;
 }
 
+a {
+    text-decoration:none;
+    color:inherit;
+}
+
 #headerbox {
     color: #000000;
     font-family: Consolas;
@@ -67,11 +90,32 @@ p {
     margin-bottom: 16px;
     margin-left: 16px;
     margin-right: 10px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-radius: 8px;
     background-color: #EFEFEF;
+}
+
+#headersub {
+    float: right;
+    margin-top: 0px;
+    display:none;
+    margin-top:-18px;
+    margin-right:18px;
+    text-align: center;
+    background-color: #EFEFEF;
+    padding: 3px;
+    text-decoration:none;
+}
+
+#headerherb {
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline;
+}
+
+#headersoil {
+    cursor: pointer;
+    vertical-align: middle;
+    display: none;
 }
 
 #imagelist {
@@ -98,21 +142,4 @@ p {
     font-family: Arial;
     font-size: 18px;
     text-decoration: none;
-}
-
-#sidebar {
-    color: #ff006e;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 16px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    background-color: #EFEFEF;
-    padding-top: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 8px;
-    overflow: auto;
 }
