@@ -1,4 +1,12 @@
 
+@media (max-width: 350px) {
+
+    .headersub-container {
+        margin-right: -29px;
+    }
+}
+
+
 .styleforbid {
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -8,6 +16,9 @@
     user-select: none;
     cursor: not-allowed;
     text-decoration:line-through;
+}
+
+.headersub-container {
 }
 
 .headerstyle {
@@ -96,7 +107,6 @@ a {
 
 #headersub {
     float: right;
-    margin-top: 0px;
     display:none;
     margin-top:-18px;
     margin-right:18px;
