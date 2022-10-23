@@ -1,8 +1,16 @@
-
-@media (max-width: 350px) {
-
+@media (max-width: 360px) {
     .headersub-container {
         margin-right: -29px;
+    }
+}
+@media (max-width: 579px) {
+    .tabelleZX {
+        font-size: 11px;
+    }
+}
+@media (min-width: 580px) {
+    .tabelleZX {
+        font-size: 24px;
     }
 }
 
@@ -18,8 +26,7 @@
     text-decoration:line-through;
 }
 
-.headersub-container {
-}
+.headersub-container {}
 
 .headerstyle {
     text-decoration:none;
@@ -33,6 +40,25 @@
 .listmargin {
     width: 170px;
     margin: 5px;
+}
+
+.tabelleZX {
+    color: #FFFFFF;
+    font-family: serif;
+    text-align: center;
+    padding: 10px;
+    padding-top: 17px;
+    margin: 10px;
+    background-color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+.tabelleZXDesc {
+    border-width: 2px;
+    border-color: aqua;
+    border-bottom-style: dashed;
 }
 
 header {
@@ -149,7 +175,10 @@ a {
 
 #linktype {
     color: rgb(50, 250, 233);
-    font-family: Arial;
-    font-size: 18px;
+    text-decoration: none;
+}
+
+#linktype_y {
+    color: #fcdd18;
     text-decoration: none;
 }
