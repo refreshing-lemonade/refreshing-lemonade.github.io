@@ -1,6 +1,6 @@
 document.write("<footer>");
     document.write("<span id='footerstyle'></span><br>");
-    document.write("<span id='footerstyle'>Website created by refreshing_lemonade.</span>");
+    document.write("<span id='footerstyle'>Website created by RL.</span>");
     document.write("<br><br>");
 document.write("</footer>");
 

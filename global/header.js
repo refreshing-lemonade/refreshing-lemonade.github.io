@@ -15,10 +15,17 @@ function showSubMenu() {
     }
 }
 
+const logoNames = ["zap", "zapDim", "zapDisc", "zapPaint", "zapTask", "zapTwin"];
+
+function switchLogo() {
+    var r = Math.floor(Math.random() * 6);
+    document.getElementById("zapLogo").src = 'https://refreshinglemona.de/global/' + logoNames[r] + '.png';
+}
+
 //    Home | Projects | Books | Extra | About
 document.write("<header>");
     document.write("<div style='display:flex; float:right;'>");
-        document.write("<img src='https://refreshinglemona.de/global/zap.png' alt='Zap' style='height:90px;'>");
+        document.write("<img id='zapLogo' onclick='switchLogo()' src='https://refreshinglemona.de/global/" + logoNames[0] + ".png' alt='Zap' style='height:90px;'></img>");
         document.write("<div id='headerbox'>");
             document.write("<a class='headerstyle' href='https://refreshinglemona.de'>Home</a> | ");
             document.write("<a class='headerstyle' href='https://refreshinglemona.de/projects'>Projects</a> | ");
@@ -42,20 +49,13 @@ document.write("<div class='headersub-container'>");
             document.write("<td></td>");
             document.write("<td class='styleforbid'>Gallery</td>");
             document.write("<td><a href='https://refreshinglemona.de/books/poetry'>Poetry</a></td>");
-            document.write("<td class='styleforbid'>Videos</td>");
+            document.write("<td class='styleforbid'>Music</td>");
             document.write("<td></td>");
         document.write("</tr><tr>");
             document.write("<td></td>");
             document.write("<td><a href='https://refreshinglemona.de/projects/rut'>RUT</a></td>");
             document.write("<td class='styleforbid'>Dr. Sandwich</td>");
-            document.write("<td class='styleforbid'>Music</td>");
-            document.write("<td></td>");
-        document.write("</tr><tr>");
-            document.write("<td></td>");
-            document.write("<td></td>");
-            document.write("<td></td>");
             document.write("<td class='styleforbid'>Tournaments</td>");
             document.write("<td></td>");
-        document.write("</tr>");
     document.write("</table></div>");
 document.write("</div>");
