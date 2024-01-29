@@ -1,4 +1,6 @@
-var header_type = false;
+let header_type = false;
+let logo_id = 0;
+const logoNames = ["zap", "zapDim", "zapDisc", "zapPaint", "zapTask", "zapTwin"];
 
 function showSubMenu() {
     if (header_type == false) {
@@ -14,48 +16,52 @@ function showSubMenu() {
         header_type = false;
     }
 }
-
-const logoNames = ["zap", "zapDim", "zapDisc", "zapPaint", "zapTask", "zapTwin"];
-
 function switchLogo() {
-    var r = Math.floor(Math.random() * 6);
-    document.getElementById("zapLogo").src = 'https://refreshinglemona.de/global/' + logoNames[r] + '.png';
+    logo_id = logo_id + 1;
+    if (logo_id == 6) logo_id = 0;
+    document.getElementById("zapLogo").src = 'https://refreshinglemona.de/global/' + logoNames[logo_id] + '.png';
 }
 
 //    Home | Projects | Books | Extra | About
-document.write("<header>");
-    document.write("<div style='display:flex; float:right;'>");
-        document.write("<img id='zapLogo' onclick='switchLogo()' src='https://refreshinglemona.de/global/" + logoNames[0] + ".png' alt='Zap' style='height:90px;'></img>");
-        document.write("<div id='headerbox'>");
-            document.write("<a class='headerstyle' href='https://refreshinglemona.de'>Home</a> | ");
-            document.write("<a class='headerstyle' href='https://refreshinglemona.de/projects'>Projects</a> | ");
-            document.write("<a class='headerstyle' href='https://refreshinglemona.de/books'>Books</a> | ");
-            document.write("<a class='styleforbid' title='Coming Soon'>Extra</a> | ");
-            document.write("<a class='headerstyle' href='https://refreshinglemona.de/about'>About</a> ");
-            document.write("<img id='headerherb' src='https://refreshinglemona.de/global/menu_herb.svg' width='35' height='35' onclick='showSubMenu()'></img>");
-            document.write("<img id='headersoil' src='https://refreshinglemona.de/global/menu_soil.svg' width='35' height='35' onclick='showSubMenu()'></img>");
-        document.write("</div>");
-    document.write("</div>");
-document.write("</header>");
-document.write("<div class='headersub-container'>");
-    document.write("<div id='headersub'><table>");
-        document.write("<tr>");
-            document.write("<th><a href='https://refreshinglemona.de'>Home</a></th>");
-            document.write("<th><a href='https://refreshinglemona.de/projects'>Projects</a></th>");
-            document.write("<th><a href='https://refreshinglemona.de/books'>Books</a></th>");
-            document.write("<th class='styleforbid'>Extra</th>");
-            document.write("<th><a href='https://refreshinglemona.de/about'>About</a></th>");
-        document.write("</tr><tr>");
-            document.write("<td></td>");
-            document.write("<td class='styleforbid'>Gallery</td>");
-            document.write("<td><a href='https://refreshinglemona.de/books/poetry'>Poetry</a></td>");
-            document.write("<td class='styleforbid'>Music</td>");
-            document.write("<td></td>");
-        document.write("</tr><tr>");
-            document.write("<td></td>");
-            document.write("<td><a href='https://refreshinglemona.de/projects/rut'>RUT</a></td>");
-            document.write("<td class='styleforbid'>Dr. Sandwich</td>");
-            document.write("<td class='styleforbid'>Tournaments</td>");
-            document.write("<td></td>");
-    document.write("</table></div>");
-document.write("</div>");
+class newheader extends HTMLElement {
+    //From user @absprog on youtube
+    connectedCallback() {
+        this.innerHTML = "<header>" +
+            "<div style='display:flex; float:right;'>" +
+            "<img id='zapLogo' onclick='switchLogo()' src='https://refreshinglemona.de/global/" + logoNames[0] + ".png' alt='Zap' style='height:90px;'></img>" +
+            "<div id='headerbox'>" +
+            "<a class='headerstyle' href='https://refreshinglemona.de'>Home</a> | " +
+            "<a class='headerstyle' href='https://refreshinglemona.de/projects'>Projects</a> | " +
+            "<a class='headerstyle' href='https://refreshinglemona.de/books'>Books</a> | " +
+            "<a class='styleforbid' title='Coming Soon'>Extra</a> | " +
+            "<a class='headerstyle' href='https://refreshinglemona.de/about'>About</a> " +
+            "<img id='headerherb' src='global/menu_herb.svg' onclick='showSubMenu()'></img>" +
+            "<img id='headersoil' src='global/menu_soil.svg' onclick='showSubMenu()'></img>" +
+            "</div>" +
+            "</div>" +
+            "</header>" +
+            "<div class='headersub-container'>" +
+            "<div id='headersub'><table>" +
+            "<tr>" +
+            "<th><a href='https://refreshinglemona.de'>Home</a></th>" +
+            "<th><a href='https://refreshinglemona.de/projects'>Projects</a></th>" +
+            "<th><a href='https://refreshinglemona.de/books'>Books</a></th>" +
+            "<th class='styleforbid'>Extra</th>" +
+            "<th><a href='https://refreshinglemona.de/about'>About</a></th>" +
+            "</tr><tr>" +
+            "<td></td>" +
+            "<td class='styleforbid'>Gallery</td>" +
+            "<td><a href='https://refreshinglemona.de/books/poetry'>Poetry</a></td>" +
+            "<td class='styleforbid'>Rankings</td>" +
+            "<td></td>" +
+            "</tr><tr>" +
+            "<td></td>" +
+            "<td><a href='https://refreshinglemona.de/projects/rut'>RUT</a></td>" +
+            "<td class='styleforbid'>Dr. Sandwich</td>" +
+            "<td class='styleforbid'>Tournaments</td>" +
+            "<td></td>" +
+            "</table></div>" +
+            "</div>";
+    }
+}
+customElements.define('new-header', newheader);

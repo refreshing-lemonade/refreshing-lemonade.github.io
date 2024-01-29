@@ -154,12 +154,16 @@ a {
     cursor: pointer;
     vertical-align: middle;
     display: inline;
+    height: 35px;
+    width: 35px;
 }
 
 #headersoil {
     cursor: pointer;
     vertical-align: middle;
     display: none;
+    height: 35px;
+    width: 35px;
 }
 
 #imagelist {
