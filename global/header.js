@@ -35,8 +35,8 @@ class newheader extends HTMLElement {
             "<a class='headerstyle' href='https://refreshinglemona.de/books'>Books</a> | " +
             "<a class='styleforbid' title='Coming Soon'>Extra</a> | " +
             "<a class='headerstyle' href='https://refreshinglemona.de/about'>About</a> " +
-            "<img id='headerherb' src='global/menu_herb.svg' onclick='showSubMenu()'></img>" +
-            "<img id='headersoil' src='global/menu_soil.svg' onclick='showSubMenu()'></img>" +
+            "<img id='headerherb' src='https://refreshinglemona.de/global/menu_herb.svg' onclick='showSubMenu()'></img>" +
+            "<img id='headersoil' src='https://refreshinglemona.de/global/menu_soil.svg' onclick='showSubMenu()'></img>" +
             "</div>" +
             "</div>" +
             "</header>" +
