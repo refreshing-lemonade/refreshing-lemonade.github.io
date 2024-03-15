@@ -1,6 +1,6 @@
 let header_type = false;
 let logo_id = 0;
-const logoNames = ["zap", "zapDim", "zapDisc", "zapPaint", "zapTask", "zapTwin"];
+const logoNames = ["zap", "zapDim", "zapDisc", "zapPaint", "zapTask", "zapTwin", "zapSoyombo", "zapDarkhan", "zap2024", "zapSzak"];
 
 function showSubMenu() {
     if (header_type == false) {
@@ -18,7 +18,7 @@ function showSubMenu() {
 }
 function switchLogo() {
     logo_id = logo_id + 1;
-    if (logo_id == 6) logo_id = 0;
+    if (logo_id > 9) logo_id = 0;
     document.getElementById("zapLogo").src = 'https://refreshinglemona.de/global/' + logoNames[logo_id] + '.png';
 }
 
@@ -28,15 +28,15 @@ class newheader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = "<header>" +
             "<div style='display:flex; float:right;'>" +
-            "<img id='zapLogo' onclick='switchLogo()' src='https://refreshinglemona.de/global/" + logoNames[0] + ".png' alt='Zap' style='height:90px;'></img>" +
+            "<img id='zapLogo' onclick='switchLogo()' src='https://refreshinglemona.de/global/" + logoNames[0] + ".png' alt='Zap' style='height:90px;'>" +
             "<div id='headerbox'>" +
             "<a class='headerstyle' href='https://refreshinglemona.de'>Home</a> | " +
             "<a class='headerstyle' href='https://refreshinglemona.de/projects'>Projects</a> | " +
             "<a class='headerstyle' href='https://refreshinglemona.de/books'>Books</a> | " +
             "<a class='styleforbid' title='Coming Soon'>Extra</a> | " +
             "<a class='headerstyle' href='https://refreshinglemona.de/about'>About</a> " +
-            "<img id='headerherb' src='https://refreshinglemona.de/global/menu_herb.svg' onclick='showSubMenu()'></img>" +
-            "<img id='headersoil' src='https://refreshinglemona.de/global/menu_soil.svg' onclick='showSubMenu()'></img>" +
+            "<img id='headerherb' src='https://refreshinglemona.de/global/menu_herb.svg' onclick='showSubMenu()'>" +
+            "<img id='headersoil' src='https://refreshinglemona.de/global/menu_soil.svg' onclick='showSubMenu()'>" +
             "</div>" +
             "</div>" +
             "</header>" +
