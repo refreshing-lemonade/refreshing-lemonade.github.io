@@ -33,7 +33,7 @@ class newheader extends HTMLElement {
             "<a class='headerstyle' href='https://refreshinglemona.de'>Home</a> | " +
             "<a class='headerstyle' href='https://refreshinglemona.de/projects'>Projects</a> | " +
             "<a class='headerstyle' href='https://refreshinglemona.de/books'>Books</a> | " +
-            "<a class='styleforbid' title='Coming Soon'>Extra</a> | " +
+            "<a class='headerstyle' href='https://refreshinglemona.de/extra'>Extra</a> | " +
             "<a class='headerstyle' href='https://refreshinglemona.de/about'>About</a> " +
             "<img id='headerherb' src='https://refreshinglemona.de/global/menu_herb.svg' onclick='showSubMenu()'>" +
             "<img id='headersoil' src='https://refreshinglemona.de/global/menu_soil.svg' onclick='showSubMenu()'>" +
@@ -46,7 +46,7 @@ class newheader extends HTMLElement {
             "<th><a href='https://refreshinglemona.de'>Home</a></th>" +
             "<th><a href='https://refreshinglemona.de/projects'>Projects</a></th>" +
             "<th><a href='https://refreshinglemona.de/books'>Books</a></th>" +
-            "<th class='styleforbid'>Extra</th>" +
+            "<th><a href='https://refreshinglemona.de/extra'>Extra</a></th>" +
             "<th><a href='https://refreshinglemona.de/about'>About</a></th>" +
             "</tr><tr>" +
             "<td></td>" +
@@ -58,7 +58,7 @@ class newheader extends HTMLElement {
             "<td></td>" +
             "<td><a href='https://refreshinglemona.de/projects/rut'>RUT</a></td>" +
             "<td class='styleforbid'>Dr. Sandwich</td>" +
-            "<td class='styleforbid'>Tournaments</td>" +
+            "<td><a href='https://refreshinglemona.de/extra/tours'>Tournaments</a></td>" +
             "<td></td>" +
             "</table></div>" +
             "</div>";

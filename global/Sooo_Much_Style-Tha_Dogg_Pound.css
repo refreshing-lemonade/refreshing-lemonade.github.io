@@ -63,7 +63,7 @@
     width: auto;
 }
 
-.tabelleZXDesc {
+.tabelleZXdesc {
     border-width: 2px;
     border-color: aqua;
     border-bottom-style: dashed;
@@ -94,9 +94,26 @@ footer {
 }
 
 body {
-    background-color: dimgrey;
     margin: 12px;
     margin-bottom: 0px;
+}
+
+.fixedcode {
+    width: 190px;
+}
+
+code {
+    display: inline-block;
+    padding: 6px;
+    background-color: rgb(64, 0, 0);
+    color: rgb(123, 236, 123);
+    font-size: 14px;
+    border-width: 2px;
+    border: solid;
+    border-top-width: 30px;
+    border-left-width: 30px;
+    border-color: white;
+    margin-bottom: 30px;
 }
 
 h1 {
@@ -113,6 +130,8 @@ p {
     font-size: 18px;
     font-family: Arial;
     margin: 5%;
+    margin-bottom: 30px;
+    margin-top: 30px;
     padding: 10px;
     background: #3f3f3f;
     border: outset;
