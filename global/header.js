@@ -50,7 +50,7 @@ class newheader extends HTMLElement {
             "<th><a href='https://refreshinglemona.de/about'>About</a></th>" +
             "</tr><tr>" +
             "<td></td>" +
-            "<td class='styleforbid'>Gallery</td>" +
+            "<td><a href='https://refreshinglemona.de/projects/gallery'>Gallery</a></td>" +
             "<td><a href='https://refreshinglemona.de/books/poetry'>Poetry</a></td>" +
             "<td class='styleforbid'>Rankings</td>" +
             "<td></td>" +
